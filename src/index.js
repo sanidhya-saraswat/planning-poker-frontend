@@ -1,13 +1,31 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from "react-dom";
+import { BrowserRouter,Routes,Route } from "react-router-dom";
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-ReactDOM.render(
+import App from './App';
+import LinkGenerator from './components/LinkGenerator'
+import Game from './components/Game';
+
+render(
+  <BrowserRouter>
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={true} />
+          <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="generate" element={<LinkGenerator />} />
+      <Route path="games/:link" element={<Game />} />
+
+    </Routes>
+  </React.StrictMode>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

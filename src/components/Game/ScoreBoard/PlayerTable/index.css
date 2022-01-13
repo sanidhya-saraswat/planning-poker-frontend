@@ -1,0 +1,27 @@
+.redName{
+  color:red;
+}
+.greenName{
+  color:rgb(2, 171, 2);
+}
+.name{
+  font-weight: bold;
+}
+.playing-card-img {
+  display: block;
+  max-width: 35px;
+  max-height: 35px;
+  width: auto;
+  height: auto;
+}
+.playing-card{
+  overflow: hidden;
+  border-radius: 1000px;
+  width: 35px;
+  height: 35px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.10);
+}
+.playing-card-back{
+  background: "#fdfdfd";
+  border: 1px solid #ebebeb;
+}

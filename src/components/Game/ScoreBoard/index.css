@@ -1,0 +1,75 @@
+.redName{
+  color:red;
+}
+.greenName{
+  color:rgb(2, 171, 2);
+}
+.name{
+  font-weight: bold;
+}
+table{
+  border-collapse: separate;
+  border-spacing: 5px 15px;
+}
+.players-container{
+  display: grid;
+  grid-column-gap: 5px;
+  grid-row-gap:5px;
+}
+#root_div{
+  display: block;
+  perspective: 1000px;
+  margin: 20px 0 0 0;
+}
+
+.playing-card-img {
+  display: block;
+  max-width: 35px;
+  max-height: 35px;
+  width: auto;
+  height: auto;
+}
+.playing-card{
+  overflow: hidden;
+  border-radius: 1000px;
+  width: 35px;
+  height: 35px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.10);
+}
+.playing-card-back{
+  background: "#fdfdfd";
+  border: 1px solid #ebebeb;
+  }
+#show_cards_btn{
+  margin-right: 5px;
+}
+.point-card{
+  width: 50px;
+  height: 50px;
+  border-radius: 1000px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.10);
+}
+.point-card-front{
+  border: 2px solid #ebebeb;
+}
+.point-card-img{
+  display: block;
+  max-width: 50px;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+}
+.bet-card{
+  width: 327px;
+  height: 102px;
+  background: white;
+}
+.average-score{
+  font-size: 22px;
+  font-weight: bold;
+  color: green;
+}
+.average-score-text{
+  font-size: 18px;
+}
